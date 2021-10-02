@@ -1,5 +1,4 @@
 node_modules
-dist
 coverage
 .rpt2_cache
 .rts2_cache_cjs
