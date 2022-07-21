@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "target": "es5",
+    "jsx": "react-jsx",
+    "jsxFactory": "",
+    "jsxFragmentFactory": "",
+    "target": "ESNext",
     "esModuleInterop": true
   },
   "exclude": ["src/__mocks__", "src/__tests__"]

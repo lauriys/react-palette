@@ -1,4 +1,4 @@
-import { render, wait } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import React from "react";
 import { Palette, getPalette } from "../";
 
@@ -15,11 +15,11 @@ test("execute children with palette", async () => {
     data: {}
   });
 
-  await wait();
-
-  expect(children).toHaveBeenCalledWith({
-    loading: false,
-    error: undefined,
-    data: palette
-  });
+  await waitFor(() => 
+    expect(children).toHaveBeenCalledWith({
+      loading: false,
+      error: undefined,
+      data: palette
+    })
+  );
 });
